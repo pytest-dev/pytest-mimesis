@@ -1,8 +1,0 @@
-<component name="libraryTable">
-  <library name="Erlang SDK">
-    <CLASSES>
-      <root url="file:///usr/bin/erl" />
-    </CLASSES>
-    <SOURCES />
-  </library>
-</component>
