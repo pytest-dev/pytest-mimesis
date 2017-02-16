@@ -1,0 +1,20 @@
+language: python
+
+sudo: false
+
+python:
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"
+
+install:
+  - pip install codecov
+  - pip install pytest-cov
+  - pip install pytest-elizabeth
+
+script: py.test --cov=pytest-elizabeth/
+
+after_success:
+  codecov
