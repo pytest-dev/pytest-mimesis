@@ -33,8 +33,7 @@ An example of Elizabeth and pytest integration.
 import elizabeth
 
 def test_generic(personal, elizabeth_locale):
-"""Test elizabeth fixture."""
-    assert isinstance(generic, elizabeth.Personal)
+    assert isinstance(personal, elizabeth.Personal)
     assert personal.name()
     assert elizabeth_locale == 'en'
 ```
