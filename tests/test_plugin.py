@@ -8,18 +8,22 @@ import elizabeth
 #     return 'ru'
 
 
-def test_generic(generic, elizabeth_locale):
-    """Test elizabeth fixture."""
-    assert isinstance(generic, elizabeth.Generic)
-    assert generic.personal.name() != generic.personal.name()
-    assert generic.personal.name()
+def test_elizabeth_locale(elizabeth_locale):
+    assert elizabeth_locale is not None
     assert elizabeth_locale == 'en'
 
 
-def test_personal(personal, elizabeth_locale):
+def test_generic(generic):
+    assert isinstance(generic, elizabeth.Generic)
+    assert generic.personal.name()
+
+
+def test_personal(personal):
     assert isinstance(personal, elizabeth.Personal)
     assert personal.name() != personal.name()
     assert personal.name()
-    assert elizabeth_locale == 'en'
 
-    # TODO: Write test for all providers
+
+def test_address(address):
+    assert isinstance(address, elizabeth.Address)
+    assert address.street_name()
