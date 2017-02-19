@@ -20,7 +20,7 @@ or
 
 ### Testing
 ```
-➜  make tests
+➜  make test
 ```
 
 ### Example
