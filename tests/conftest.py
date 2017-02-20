@@ -1,1 +1,1 @@
-pytest_plugins = 'elizabeth'
+pytest_plugins = 'pytest_elizabeth'
