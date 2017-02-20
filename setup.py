@@ -1,9 +1,9 @@
-from distutils.core import setup
+from setuptools import setup
 
 import pytest_elizabeth
 
 setup(
-    name='pytest_elizabeth',
+    name='pytest-elizabeth',
     version=pytest_elizabeth.__version__,
     packages=['pytest_elizabeth'],
     url='https://github.com/lk-geimfari/pytest-elizabeth',
@@ -13,9 +13,10 @@ setup(
     description='Elizabeth integration with the pytest test runner',
     classifiers=[
         "Development Status :: 6 - Mature",
+        "Framework :: Pytest",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: POSIX",
+        "Operating System :: OS Independent",
         "Topic :: Software Development :: Testing",
         "Topic :: Software Development :: Libraries",
         "Topic :: Utilities",
@@ -23,10 +24,11 @@ setup(
     ],
     install_requires=[
         "elizabeth>=0.3.15",
+        "pytest>=3.0.0"
     ],
     entry_points={
         'pytest11': [
-            'pytest_elizabeth = pytest_elizabeth.plugin',
+            'elizabeth = pytest_elizabeth',
         ]
     },
     include_package_data=True
