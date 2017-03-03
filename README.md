@@ -3,19 +3,19 @@
 
 [![Build Status](https://travis-ci.org/lk-geimfari/pytest-elizabeth.svg?branch=master)](https://travis-ci.org/lk-geimfari/pytest-elizabeth)
 
-pytest-elizabeth is a pytest plugin that provides pytest fixtures for [Elizabeth](https://github.com/lk-geimfari/elizabeth) providers.  This allows you to quickly and easily use randomized, dummy data as part of your test suite.
+**pytest-mimesis** is a pytest plugin that provides pytest fixtures for [Mimesis](https://github.com/lk-geimfari/mimesis) providers.  This allows you to quickly and easily use randomized, dummy data as part of your test suite.
 
 
 #### Installation
 
 ```
-pip install pytest-elizabeth
+pip install pytest-mimesis
 ```
 
 or 
 ```
-➜ ~ git clone https://github.com/lk-geimfari/pytest-elizabeth.git
-➜ ~ cd pytest-elizabeth
+➜ ~ git clone https://github.com/lk-geimfari/pytest-mimesis.git
+➜ ~ cd pytest-mimesis/
 ➜  make install
 ```
 
@@ -69,7 +69,6 @@ The following fixtures are made available as part of pytest-elizabeth.
 * food
 * hardware
 * internet
-* network
 * numbers
 * path
 * text
@@ -81,6 +80,10 @@ The following fixtures are made available as part of pytest-elizabeth.
 ➜  make test
 ```
 
+#### Authors
+[Kevin Schellenberg](https://github.com/wikkiewikkie) and [Likid Geimfari](https://github.com/lk-geimfari).
+
+
 #### License
 
-pytest-elizabeth is licensed under the [MIT License](https://raw.githubusercontent.com/lk-geimfari/elizabeth/master/LICENSE).
+pytest-elizabeth is licensed under the [MIT License](https://github.com/lk-geimfari/pytest-elizabeth/blob/master/LICENSE).

@@ -1,6 +1,6 @@
 import pytest
 
-from elizabeth import (
+from mimesis import (
     Address,
     Business,
     ClothingSizes,
@@ -11,13 +11,12 @@ from elizabeth import (
     Food,
     Hardware,
     Internet,
-    Network,
     Numbers,
     Path,
     Personal,
     Text,
     Transport,
-    Generic
+    Generic,
 )
 
 
@@ -146,15 +145,6 @@ def internet():
     :return:
     """
     return Internet()
-
-
-@pytest.fixture()
-def network():
-    """
-
-    :return:
-    """
-    return Network()
 
 
 @pytest.fixture()

@@ -1,5 +1,5 @@
 import pytest
-import elizabeth
+import mimesis
 
 
 def test_locale(locale):
@@ -14,79 +14,75 @@ def test_locale_override(locale):
 
 
 def test_generic(generic):
-    assert isinstance(generic, elizabeth.Generic)
+    assert isinstance(generic, mimesis.Generic)
     assert generic.locale == 'en'
     assert generic.personal.name()
 
 
 @pytest.mark.parametrize('locale', ['de'])
 def test_generic_override(generic):
-    assert isinstance(generic, elizabeth.Generic)
+    assert isinstance(generic, mimesis.Generic)
     assert generic.locale == 'de'
 
 
 def test_personal(personal):
-    assert isinstance(personal, elizabeth.Personal)
+    assert isinstance(personal, mimesis.Personal)
     assert personal.name() != personal.name()
     assert personal.name()
 
 
 def test_address(address):
-    assert isinstance(address, elizabeth.Address)
+    assert isinstance(address, mimesis.Address)
     assert address.street_name()
 
 
 def test_business(business):
-    assert isinstance(business, elizabeth.Business)
+    assert isinstance(business, mimesis.Business)
 
 
 def test_clothing_sizes(clothing_sizes):
-    assert isinstance(clothing_sizes, elizabeth.ClothingSizes)
+    assert isinstance(clothing_sizes, mimesis.ClothingSizes)
 
 
 def test_code(code):
-    assert isinstance(code, elizabeth.Code)
+    assert isinstance(code, mimesis.Code)
 
 
 def test_datetime_el(datetime_el):
-    assert isinstance(datetime_el, elizabeth.Datetime)
+    assert isinstance(datetime_el, mimesis.Datetime)
 
 
 def test_development(development):
-    assert isinstance(development, elizabeth.Development)
+    assert isinstance(development, mimesis.Development)
 
 
 def test_file_el(file_el):
-    assert isinstance(file_el, elizabeth.File)
+    assert isinstance(file_el, mimesis.File)
 
 
 def test_food(food):
-    assert isinstance(food, elizabeth.Food)
+    assert isinstance(food, mimesis.Food)
 
 
 def test_hardware(hardware):
-    assert isinstance(hardware, elizabeth.Hardware)
+    assert isinstance(hardware, mimesis.Hardware)
 
 
 def test_internet(internet):
-    assert isinstance(internet, elizabeth.Internet)
-
-
-def test_network(network):
-    assert isinstance(network, elizabeth.Network)
+    assert isinstance(internet, mimesis.Internet)
 
 
 def test_numbers(numbers):
-    assert isinstance(numbers, elizabeth.Numbers)
+    assert isinstance(numbers, mimesis.Numbers)
 
 
 def test_path(path):
-    assert isinstance(path, elizabeth.Path)
+    assert isinstance(path, mimesis.Path)
 
 
 def test_text(text):
-    assert isinstance(text, elizabeth.Text)
+    assert isinstance(text, mimesis.Text)
 
 
 def test_transport(transport):
-    assert isinstance(transport, elizabeth.Transport)
+    assert isinstance(transport, mimesis.Transport)
