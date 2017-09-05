@@ -1,4 +1,4 @@
-## pytest-elizabeth
+## pytest-mimesis
 
 
 [![Build Status](https://travis-ci.org/lk-geimfari/pytest-elizabeth.svg?branch=master)](https://travis-ci.org/lk-geimfari/pytest-elizabeth)
@@ -55,7 +55,7 @@ def test_add_phone(user, personal):
 
 #### Fixtures
 
-The following fixtures are made available as part of pytest-elizabeth.
+The following fixtures are made available as part of pytest-mimesis.
 
 * generic
 * personal
