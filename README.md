@@ -86,4 +86,4 @@ The following fixtures are made available as part of pytest-mimesis.
 
 #### License
 
-pytest-elizabeth is licensed under the [MIT License](https://github.com/lk-geimfari/pytest-elizabeth/blob/master/LICENSE).
+pytest-mimesis is licensed under the [MIT License](https://github.com/mimesis-lab/pytest-mimesis/blob/master/LICENSE).
