@@ -18,12 +18,12 @@ def _mimesis_cache():
 
 
 @pytest.fixture()
-def locale():
+def mimesis_locale():
     """Specifies which locale to use."""
     return DEFAULT_LOCALE
 
 
 @pytest.fixture()
-def mimesis(_mimesis_cache, locale):
+def mimesis(_mimesis_cache, mimesis_locale):
     """Mimesis fixture to provide fake data using all built-in providers."""
-    return _mimesis_cache(locale)
+    return _mimesis_cache(mimesis_locale)

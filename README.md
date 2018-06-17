@@ -12,7 +12,7 @@
 pip install pytest-mimesis
 ```
 
-or 
+or
 ```
 ➜ ~ git clone https://github.com/mimesis-lab/pytest-mimesis.git
 ➜ ~ cd pytest-mimesis/
@@ -23,7 +23,7 @@ or
 
 Using the personal provider as part of a test.
 
-`your_module/__init__.py`
+`your_module/__init__.py`:
 
 ```python
 def validate_email(email):
@@ -36,52 +36,31 @@ def validate_email(email):
 ```python
 from your_module import validate_email
 
-def test_validate_email(personal):
-    assert validate_email(personal.email())
+def test_validate_email(mimesis):
+    assert validate_email(mimesis('email'))
 ```
 
-Specifying locales.
+Specifying locales:
 
 ```python
-@pytest.mark.parameterize('locale', 'de')  # use German locale
-def test_create_user(personal):
-    assert create_user(name=personal.full_name())
-    
+@pytest.mark.parameterize('mimesis_locale', 'de')  # use German locale
+def test_create_user(mimesis):
+    assert create_user(name=mimesis('full_name'))
 
-@pytest.mark.parameterize('locale', ['de', 'en', 'jp'])  # test multiple locales
-def test_add_phone(user, personal):
-    assert user.add_phone_number(name=personal.full_name())
+
+@pytest.mark.parameterize('mimesis_locale', ['de', 'en', 'jp'])  # test multiple locales
+def test_add_phone(user, mimesis):
+    assert user.add_phone_number(name=mimesis('full_name'))
 ```
 
 #### Fixtures
 
-The following fixtures are made available as part of pytest-mimesis.
+We provide two public fixtures: `mimesis_locale` and `mimesis`.
+While `mimesis_locale` is just a string (like: `en`, `ru`), 
+`mimesis` is an instance of `mimesis.schema.Field`.
 
-* generic
-* personal
-* address
-* business
-* clothing_sizes
-* code
-* datetime_el
-* development
-* file_el
-* food
-* hardware
-* internet
-* numbers
-* path
-* text
-* transport
-
-
-#### Testing
-```
-➜  make test
-```
-
-#### Authors
-[Kevin Schellenberg](https://github.com/wikkiewikkie) and [Likid Geimfari](https://github.com/lk-geimfari).
+We use caching of `mimesis` instances for different locales for the whole
+test session, so creating new instances is cheap. 
 
 
 #### License
