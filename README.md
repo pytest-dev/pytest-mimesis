@@ -1,7 +1,7 @@
 ## pytest-mimesis
 
 
-[![Build Status](https://travis-ci.org/lk-geimfari/pytest-elizabeth.svg?branch=master)](https://travis-ci.org/lk-geimfari/pytest-elizabeth)
+[![Build Status](https://travis-ci.org/mimesis-lab/pytest-mimesis.svg?branch=master)](https://travis-ci.org/mimesis-lab/pytest-mimesis)
 
 **pytest-mimesis** is a pytest plugin that provides pytest fixtures for [Mimesis](https://github.com/lk-geimfari/mimesis) providers.  This allows you to quickly and easily use randomized, dummy data as part of your test suite.
 
@@ -14,7 +14,7 @@ pip install pytest-mimesis
 
 or 
 ```
-➜ ~ git clone https://github.com/lk-geimfari/pytest-mimesis.git
+➜ ~ git clone https://github.com/mimesis-lab/pytest-mimesis.git
 ➜ ~ cd pytest-mimesis/
 ➜  make install
 ```
