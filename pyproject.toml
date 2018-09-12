@@ -33,7 +33,7 @@ mimesis = ">=2.0"
 
 
 [tool.poetry.dev-dependencies]
-pytest-isort = "^0.2.0"
+pytest-isort = "^0.2.1"
 pytest-flake8 = "^1.0"
 flake8-builtins = "^1.4"
 flake8-commas = "^2.0"
