@@ -3,7 +3,6 @@ category = "main"
 description = "Atomic file writes."
 name = "atomicwrites"
 optional = false
-platform = "*"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.2.1"
 
@@ -12,28 +11,23 @@ category = "main"
 description = "Classes Without Boilerplate"
 name = "attrs"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "18.2.0"
 
 [[package]]
 category = "main"
 description = "Cross-platform colored terminal text."
+marker = "sys_platform == \"win32\""
 name = "colorama"
 optional = false
-platform = "*"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.4.0"
-
-[package.requirements]
-platform = "win32"
 
 [[package]]
 category = "dev"
 description = "the modular source code checker: pep8, pyflakes and co"
 name = "flake8"
 optional = false
-platform = "*"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "3.6.0"
 
@@ -48,7 +42,6 @@ category = "dev"
 description = "A flake8 extension that checks for blind except: statements"
 name = "flake8-blind-except"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "0.1.1"
 
@@ -60,7 +53,6 @@ category = "dev"
 description = "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle."
 name = "flake8-bugbear"
 optional = false
-platform = "*"
 python-versions = ">=3.5"
 version = "18.8.0"
 
@@ -73,7 +65,6 @@ category = "dev"
 description = "Check for python builtins being used as variables or parameters."
 name = "flake8-builtins"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.4.1"
 
@@ -85,7 +76,6 @@ category = "dev"
 description = "Adds coding magic comment checks to flake8"
 name = "flake8-coding"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.3.1"
 
@@ -97,7 +87,6 @@ category = "dev"
 description = "Flake8 lint for trailing commas."
 name = "flake8-commas"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "2.0.0"
 
@@ -109,7 +98,6 @@ category = "dev"
 description = "A flake8 plugin to help you write better list/set/dict comprehensions."
 name = "flake8-comprehensions"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.4.1"
 
@@ -121,7 +109,6 @@ category = "dev"
 description = "Extension for flake8 which uses pydocstyle to check docstrings"
 name = "flake8-docstrings"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.3.0"
 
@@ -135,7 +122,6 @@ category = "dev"
 description = "A flake8 plugin for testing PEP-8 conform package and module names."
 name = "flake8-module-name"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "0.1.5"
 
@@ -144,7 +130,6 @@ category = "dev"
 description = "Checks for old string formatting."
 name = "flake8-pep3101"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.2.1"
 
@@ -156,7 +141,6 @@ category = "dev"
 description = "Polyfill package for Flake8 plugins"
 name = "flake8-polyfill"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.0.2"
 
@@ -168,7 +152,6 @@ category = "dev"
 description = "pytest assert checker plugin for flake8"
 name = "flake8-pytest"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.3"
 
@@ -180,7 +163,6 @@ category = "dev"
 description = "Flake8 lint for quotes."
 name = "flake8-quotes"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.0.0"
 
@@ -192,7 +174,6 @@ category = "dev"
 description = "string format checker, plugin for flake8"
 name = "flake8-string-format"
 optional = false
-platform = "UNKNOWN"
 python-versions = "*"
 version = "0.2.3"
 
@@ -204,7 +185,6 @@ category = "dev"
 description = "A Python utility / library to sort Python imports."
 name = "isort"
 optional = false
-platform = "*"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "4.3.4"
 
@@ -213,7 +193,6 @@ category = "dev"
 description = "McCabe checker, plugin for flake8"
 name = "mccabe"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "0.6.1"
 
@@ -222,7 +201,6 @@ category = "main"
 description = "Mimesis: mock data for developers."
 name = "mimesis"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "2.1.0"
 
@@ -231,7 +209,6 @@ category = "main"
 description = "More routines for operating on iterables, beyond itertools"
 name = "more-itertools"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "4.3.0"
 
@@ -241,24 +218,20 @@ six = ">=1.0.0,<2.0.0"
 [[package]]
 category = "main"
 description = "Object-oriented filesystem paths"
+marker = "python_version < \"3.6\""
 name = "pathlib2"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "2.3.2"
 
 [package.dependencies]
 six = "*"
 
-[package.requirements]
-python = "<3.6"
-
 [[package]]
 category = "dev"
 description = "Check PEP-8 naming conventions, plugin for flake8"
 name = "pep8-naming"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "0.7.0"
 
@@ -270,7 +243,6 @@ category = "main"
 description = "plugin and hook calling mechanisms for python"
 name = "pluggy"
 optional = false
-platform = "unix"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.8.0"
 
@@ -279,7 +251,6 @@ category = "main"
 description = "library with cross-python path, ini-parsing, io, code, log facilities"
 name = "py"
 optional = false
-platform = "unix"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.7.0"
 
@@ -288,7 +259,6 @@ category = "dev"
 description = "Python style guide checker"
 name = "pycodestyle"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "2.4.0"
 
@@ -297,7 +267,6 @@ category = "dev"
 description = "Python docstring style checker"
 name = "pydocstyle"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "3.0.0"
 
@@ -310,7 +279,6 @@ category = "dev"
 description = "passive checker of Python programs"
 name = "pyflakes"
 optional = false
-platform = "*"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "2.0.0"
 
@@ -319,22 +287,18 @@ category = "main"
 description = "pytest: simple powerful testing with Python"
 name = "pytest"
 optional = false
-platform = "unix"
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "3.9.3"
+version = "4.0.0"
 
 [package.dependencies]
 atomicwrites = ">=1.0"
 attrs = ">=17.4.0"
+colorama = "*"
 more-itertools = ">=4.0.0"
 pluggy = ">=0.7"
 py = ">=1.5.0"
 setuptools = "*"
 six = ">=1.10.0"
-
-[package.dependencies.colorama]
-platform = "win32"
-version = "*"
 
 [package.dependencies.pathlib2]
 python = "<3.6"
@@ -345,7 +309,6 @@ category = "dev"
 description = "pytest plugin to check FLAKE8 requirements"
 name = "pytest-flake8"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.0.2"
 
@@ -358,7 +321,6 @@ category = "dev"
 description = "py.test plugin to check import ordering using isort"
 name = "pytest-isort"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "0.2.1"
 
@@ -371,7 +333,6 @@ category = "dev"
 description = "Pytest plugin to randomly order tests and control random.seed."
 name = "pytest-randomly"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.2.3"
 
@@ -383,7 +344,6 @@ category = "main"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
-platform = "*"
 python-versions = "*"
 version = "1.11.0"
 
@@ -392,13 +352,11 @@ category = "dev"
 description = "This package provides 16 stemmer algorithms (15 + Poerter English stemmer) generated from Snowball algorithms."
 name = "snowballstemmer"
 optional = false
-platform = "UNKNOWN"
 python-versions = "*"
 version = "1.2.1"
 
 [metadata]
 content-hash = "87e5cfb6b0ca9a930aec095ef4e27c220a2bc8e114debff0751c734f47a5cc76"
-platform = "*"
 python-versions = "^3.5 || ^3.6"
 
 [metadata.hashes]
@@ -430,7 +388,7 @@ py = ["bf92637198836372b520efcba9e020c330123be8ce527e535d185ed4b6f45694", "e7682
 pycodestyle = ["74abc4e221d393ea5ce1f129ea6903209940c1ecd29e002e8c6933c2b21026e0", "cbc619d09254895b0d12c2c691e237b2e91e9b2ecf5e84c26b35400f93dcfb83", "cbfca99bd594a10f674d0cd97a3d802a1fdef635d4361e1a2658de47ed261e3a"]
 pydocstyle = ["2258f9b0df68b97bf3a6c29003edc5238ff8879f1efb6f1999988d934e432bd8", "5741c85e408f9e0ddf873611085e819b809fca90b619f5fd7f34bd4959da3dd4", "ed79d4ec5e92655eccc21eb0c6cf512e69512b4a97d215ace46d17e4990f2039"]
 pyflakes = ["9a7662ec724d0120012f6e29d6248ae3727d821bba522a0e6b356eff19126a49", "f661252913bc1dbe7fcfcbf0af0db3f42ab65aabd1a6ca68fe5d466bace94dae"]
-pytest = ["a9e5e8d7ab9d5b0747f37740276eb362e6a76275d76cebbb52c6049d93b475db", "bf47e8ed20d03764f963f0070ff1c8fda6e2671fc5dd562a4d3b7148ad60f5ca"]
+pytest = ["488c842647bbeb350029da10325cb40af0a9c7a2fdda45aeb1dda75b60048ffb", "c055690dfefa744992f563e8c3a654089a6aa5b8092dded9b6fafbd70b2e45a7"]
 pytest-flake8 = ["4f30f5be3efb89755f38f11bdb2a5e22d19a6f5faa73428f703a3292a9572cd3", "c740ad6aa19e3958947d2118f70bed218caf1d2097039fb7318573a2a72f89a1"]
 pytest-isort = ["2221c0914dfca41914625a646f0d2d1d4c676861b9a7b26746a7fdd40aa2c59b", "c70d0f900f4647bb714f0843dd82d7f7b759904006de31254efdb72ce88e0c0e"]
 pytest-randomly = ["6db5e03d72b54052b9b379dc3cfa4749c19bfe4de161cf3eb24762049f4ce9be", "92ec6745d3ebdd690ecb598648748c9601f16f5afacf83ccef2b50d23e6edb7f"]
