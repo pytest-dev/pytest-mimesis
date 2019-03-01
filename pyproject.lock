@@ -198,11 +198,11 @@ version = "0.6.1"
 
 [[package]]
 category = "main"
-description = "Mimesis: mock data for developers."
+description = "Mimesis: fake data generator."
 name = "mimesis"
 optional = false
 python-versions = "*"
-version = "2.1.0"
+version = "3.0.0"
 
 [[package]]
 category = "main"
@@ -383,7 +383,7 @@ flake8-quotes = ["fd9127ad8bbcf3b546fa7871a5266fd8623ce765ebe3d5aa5eabb80c01212b
 flake8-string-format = ["68ea72a1a5b75e7018cae44d14f32473c798cf73d75cbaed86c6a9a907b770b2", "774d56103d9242ed968897455ef49b7d6de272000cfa83de5814273a868832f1"]
 isort = ["1153601da39a25b14ddc54955dbbacbb6b2d19135386699e2ad58517953b34af", "b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8", "ec9ef8f4a9bc6f71eec99e1806bfa2de401650d996c59330782b89a5555c1497"]
 mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
-mimesis = ["2a17aa98cc8aff2c0b1828312e213a515030ed57a1c7b61fc07a87150cb0f25f", "4b856023acdaaefe2e10bbfea9fd4cb6fa9adbbbe9618a8f796aa8887b58e6f2"]
+mimesis = ["4384fec11d659cd5e6316a524467b29600f14d4c81ac93bcdd3b237cab03b3fe", "702d74fc8984d593086a5e92f0d55a148629e57ccaf6fc5b875f056a3174435e"]
 more-itertools = ["38a936c0a6d98a38bcc2d03fdaaedaba9f412879461dd2ceff8d37564d6522e4", "c0a5785b1109a6bd7fac76d6837fd1feca158e54e521ccd2ae8bfe393cc9d4fc", "fe7a7cae1ccb57d33952113ff4fa1bc5f879963600ed74918f1236e212ee50b9"]
 pathlib2 = ["25199318e8cc3c25dcb45cbe084cc061051336d5a9ea2a12448d3d8cb748f742", "5887121d7f7df3603bca2f710e7219f3eca0eb69e0b7cc6e0a022e155ac931a7"]
 pep8-naming = ["65afe400096400720ba6ca4c3d502d92ebf02f661c1e4ee0ae59472c05463324", "cc37a5f63e006a4e88821c749f8ae4899a9c22571d8186d3815440aa09423c0e"]

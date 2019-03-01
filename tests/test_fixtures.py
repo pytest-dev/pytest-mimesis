@@ -3,7 +3,7 @@
 import string
 
 import pytest
-from mimesis.config import DEFAULT_LOCALE
+from mimesis.locales import DEFAULT_LOCALE
 
 
 def test_locale(mimesis_locale, mimesis):

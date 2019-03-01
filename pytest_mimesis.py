@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from mimesis.config import DEFAULT_LOCALE
+from mimesis.locales import DEFAULT_LOCALE
 from mimesis.schema import Field
 
 
