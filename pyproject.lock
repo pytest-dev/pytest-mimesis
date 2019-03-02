@@ -338,7 +338,7 @@ description = "Pytest plugin to randomly order tests and control random.seed."
 name = "pytest-randomly"
 optional = false
 python-versions = ">=3.4"
-version = "2.0.0"
+version = "2.1.0"
 
 [package.dependencies]
 pytest = "*"
@@ -360,7 +360,7 @@ python-versions = "*"
 version = "1.2.1"
 
 [metadata]
-content-hash = "9b8b8d79f966dec0ee285b78c02c4e631797ed7f47b4fc80a03356f823e5a1b0"
+content-hash = "235a7858387886cb8e98f2a38e28835b991d784ef6ac63c0dda45e4ac889fc48"
 python-versions = "^3.5 || ^3.6"
 
 [metadata.hashes]
@@ -395,6 +395,6 @@ pyflakes = ["9a7662ec724d0120012f6e29d6248ae3727d821bba522a0e6b356eff19126a49", 
 pytest = ["80cfd9c8b9e93f419abcc0400e9f595974a98e44b6863a77d3e1039961bfc9c4", "c2396a15726218a2dfef480861c4ba37bd3952ebaaa5b0fede3fc23fddcd7f8c"]
 pytest-flake8 = ["b2c71fb6d469bae076a01c43d4a83485d740db6a8a00bad77e0657ed035e98d4", "e6a407e8effa623d839e4994799c2a4674ff46219d39533fc0afccf39af53fc1"]
 pytest-isort = ["2221c0914dfca41914625a646f0d2d1d4c676861b9a7b26746a7fdd40aa2c59b", "c70d0f900f4647bb714f0843dd82d7f7b759904006de31254efdb72ce88e0c0e"]
-pytest-randomly = ["08868610aa999c5e19117210932d65d70d12da0191abe173b825cdf08428a82c", "cdbc15eb26a8fdf4fe509cc816e9e58eb46129e5c72f6c17d754a6dd3817ef97"]
+pytest-randomly = ["73489a8a650b7b28e6b03c1e8a35cb28f40b826362fc638662d74e35cb311f22", "a811c854e6b220437d45d1408e8deb0fc1537c8d5db9857364f9bdcde30a348e"]
 six = ["3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c", "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"]
 snowballstemmer = ["919f26a68b2c17a7634da993d91339e288964f93c274f1343e3bbbe2096e1128", "9f3bcd3c401c3e862ec0ebe6d2c069ebc012ce142cce209c098ccb5b09136e89"]
