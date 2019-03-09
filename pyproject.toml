@@ -16,7 +16,7 @@ authors = [
   "Kevin Schellenberg"
 ]
 
-readme = 'README.md'
+readme = "README.md"
 
 repository = "https://github.com/mimesis-lab/pytest-mimesis"
 homepage = "https://github.com/mimesis-lab/pytest-mimesis"
@@ -32,6 +32,16 @@ keywords = [
   "tests"
 ]
 
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+]
 
 [tool.poetry.plugins.pytest11]
 mimesis = "pytest_mimesis"
