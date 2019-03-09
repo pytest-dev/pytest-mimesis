@@ -1,31 +1,24 @@
 ## pytest-mimesis
 
 
-[![Build Status](https://travis-ci.org/mimesis-lab/pytest-mimesis.svg?branch=master)](https://travis-ci.org/mimesis-lab/pytest-mimesis)
+[![Build Status](https://travis-ci.org/mimesis-lab/pytest-mimesis.svg?branch=master)](https://travis-ci.org/mimesis-lab/pytest-mimesis) [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 **pytest-mimesis** is a pytest plugin that provides pytest fixtures for [Mimesis](https://github.com/lk-geimfari/mimesis) providers.  This allows you to quickly and easily use randomized, dummy data as part of your test suite.
 
 
-#### Installation
+## Installation
 
 ```
 pip install pytest-mimesis
 ```
 
-or
-```
-➜ ~ git clone https://github.com/mimesis-lab/pytest-mimesis.git
-➜ ~ cd pytest-mimesis/
-➜  make install
-```
-
-#### Examples
+## Examples
 
 Using the personal provider as part of a test.
 
-`your_module/__init__.py`:
-
 ```python
+# your_module/__init__.py
+
 def validate_email(email):
     # code that validates an e-mail address
     return True
@@ -53,16 +46,16 @@ def test_add_phone(user, mimesis):
     assert user.add_phone_number(name=mimesis('full_name'))
 ```
 
-#### Fixtures
+## Fixtures
 
 We provide two public fixtures: `mimesis_locale` and `mimesis`.
-While `mimesis_locale` is just a string (like: `en`, `ru`), 
+While `mimesis_locale` is just a string (like: `en`, `ru`),
 `mimesis` is an instance of `mimesis.schema.Field`.
 
 We use caching of `mimesis` instances for different locales for the whole
-test session, so creating new instances is cheap. 
+test session, so creating new instances is cheap.
 
 
-#### License
+## License
 
 pytest-mimesis is licensed under the [MIT License](https://github.com/mimesis-lab/pytest-mimesis/blob/master/LICENSE).

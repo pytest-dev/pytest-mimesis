@@ -18,7 +18,8 @@ def test_locale_override(mimesis_locale, mimesis):
 
 
 def test_mimesis_fixture(mimesis):
-    assert mimesis('age', minimum=18, maximum=18) == 18
+    age = 18
+    assert mimesis('age', minimum=age, maximum=age) == age
     assert len(mimesis('full_name').split(' ')) > 1
 
 

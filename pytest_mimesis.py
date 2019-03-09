@@ -9,12 +9,12 @@ from mimesis.schema import Field
 def _mimesis_cache():
     cached_instances = {}
 
-    def _inner(locale):
+    def factory(locale):
         if locale not in cached_instances:
             cached_instances[locale] = Field(locale)
         return cached_instances[locale]
 
-    return _inner
+    return factory
 
 
 @pytest.fixture()
