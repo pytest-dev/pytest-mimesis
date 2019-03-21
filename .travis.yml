@@ -8,8 +8,11 @@ matrix:
       dist: xenial
       sudo: true
 
-install:
+before_install:
+  - pip freeze | xargs pip uninstall -y
   - pip install poetry
+
+install:
   - poetry install
 
 script:
