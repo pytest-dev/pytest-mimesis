@@ -5,7 +5,7 @@ from mimesis.locales import DEFAULT_LOCALE
 from mimesis.schema import Field
 
 
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='session')  # noqa: PT005
 def _mimesis_cache():
     cached_instances = {}
 

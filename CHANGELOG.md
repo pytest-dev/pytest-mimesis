@@ -1,5 +1,13 @@
 # Version history
 
+## Version 1.0.1 (WIP)
+
+### Misc
+
+- Adds `tox` runner
+- Moves project to `pytest-dev` org
+
+
 ## Version 1.0.0
 
 ### Features
