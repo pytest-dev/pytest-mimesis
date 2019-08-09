@@ -1,26 +1,17 @@
+dist: xenial
+sudo: false
 language: python
 
-matrix:
-  fast_finish: true
-  include:
-    - python: 3.6
-    - python: 3.7
-      dist: xenial
-      sudo: true
+python:
+  - 3.6
+  - 3.7
 
 before_install:
   - pip freeze | xargs pip uninstall -y
-  - pip install poetry
-
-install:
-  - poetry install
+  - pip install poetry tox-travis
 
 script:
-  - poetry run flake8 pytest_mimesis.py tests/
-  - poetry run pytest
-  - poetry check
-  - poetry run pip check
-  - poetry run safety check --bare --full-report
+  - tox
 
 notifications:
   email:
