@@ -4,7 +4,7 @@
 
 We use [`poetry`](https://github.com/sdispater/poetry) to manage the dependencies.
 
-To install them you would need to run two commands:
+To install them:
 
 ```bash
 poetry install
@@ -22,7 +22,7 @@ pytest
 To run linting:
 
 ```bash
-flake8 .
+flake8
 ```
 
 You can also run all checks for all python versions at once by:
@@ -51,4 +51,4 @@ Before submitting your code please do the following steps:
 You can contribute by spreading a word about this library.
 It would also be a huge contribution to write
 a short article on how you are using this project.
-What are your best-practices?
+What are your best practices?
