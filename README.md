@@ -3,12 +3,12 @@
 
 [![Build Status](https://travis-ci.org/pytest-dev/pytest-mimesis.svg?branch=master)](https://travis-ci.org/pytest-dev/pytest-mimesis) [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
-**pytest-mimesis** is a pytest plugin that provides pytest fixtures for [Mimesis](https://github.com/lk-geimfari/mimesis) providers.  This allows you to quickly and easily use randomized, dummy data as part of your test suite.
+**pytest-mimesis** is a pytest plugin that provides pytest fixtures for [Mimesis](https://github.com/lk-geimfari/mimesis) providers. This allows you to quickly and easily use randomized, dummy data as part of your test suite.
 
 
 ## Installation
 
-```
+```bash
 pip install pytest-mimesis
 ```
 
