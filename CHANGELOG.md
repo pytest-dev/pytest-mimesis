@@ -1,6 +1,6 @@
 # Version history
 
-## Version 1.0.1 (WIP)
+## Version 1.0.1
 
 ### Misc
 
