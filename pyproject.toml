@@ -18,8 +18,8 @@ authors = [
 
 readme = "README.md"
 
-repository = "https://github.com/mimesis-lab/pytest-mimesis"
-homepage = "https://github.com/mimesis-lab/pytest-mimesis"
+repository = "https://github.com/pytest-dev/pytest-mimesis"
+homepage = "https://github.com/pytest-dev/pytest-mimesis"
 
 keywords = [
   "mimesis",
