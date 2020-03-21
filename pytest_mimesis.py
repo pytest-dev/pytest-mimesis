@@ -6,7 +6,7 @@ from mimesis.schema import Field
 
 
 @pytest.fixture(scope='session')  # noqa: PT005
-def _mimesis_cache():
+def _mimesis_cache():  # noqa: PT005
     cached_instances = {}
 
     def factory(locale):
