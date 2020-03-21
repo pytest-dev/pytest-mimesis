@@ -1,11 +1,15 @@
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry>=1.0"]
 build-backend = "poetry.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
 
 
 [tool.poetry]
 name = "pytest_mimesis"
-version = "1.0.1"
+version = "1.1.0"
 description = "Mimesis integration with the pytest test runner"
 
 license = "MIT"
@@ -38,9 +42,6 @@ classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Natural Language :: English",
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
 ]
 
 [tool.poetry.plugins.pytest11]
@@ -49,15 +50,18 @@ mimesis = "pytest_mimesis"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+
 pytest = ">=4.2"
-mimesis = "^3.1"
+mimesis = "^4.0"
 
 
 [tool.poetry.dev-dependencies]
 pytest-cov = "^2.7"
 pytest-randomly = "^3.0"
-flake8-pytest = "^1.3"
-wemake-python-styleguide = "^0.11"
-safety = "^1.8"
+
+nitpick = "^0.21.3"
+wemake-python-styleguide = "^0.13"
 flake8-pytest-style = "^0.1.3"
+
+safety = "^1.8"
 tox = "^3.13"

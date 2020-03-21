@@ -1,5 +1,18 @@
 # Version history
 
+## Version 1.1.0
+
+### Features
+
+- Adds `python3.8` support
+- Adds `mimesis@4` support
+
+### Misc
+
+- Updates `poetry` to `1.0`
+- Updates built-time dependencies
+
+
 ## Version 1.0.1
 
 ### Misc

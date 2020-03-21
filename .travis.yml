@@ -4,13 +4,18 @@ language: python
 python:
   - 3.6
   - 3.7
+  - 3.8
 
 before_install:
+  # Clearing environment:
   - pip freeze | xargs pip uninstall -y
-  - pip install poetry tox-travis
+  # Installing poetry:
+  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+  - source "$HOME/.poetry/env"
+  # Installing tox runner for travis:
+  - pip install tox-travis
 
-script:
-  - tox
+script: tox
 
 notifications:
   email:

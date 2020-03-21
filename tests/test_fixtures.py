@@ -8,7 +8,7 @@ from mimesis.locales import DEFAULT_LOCALE
 
 def test_locale(mimesis_locale, mimesis):
     assert mimesis_locale == DEFAULT_LOCALE
-    assert mimesis.locale == DEFAULT_LOCALE
+    assert mimesis.locale == DEFAULT_LOCALE  # we test caching here
 
 
 @pytest.mark.parametrize('mimesis_locale', ['de'])
@@ -19,6 +19,7 @@ def test_locale_override(mimesis_locale, mimesis):
 
 def test_mimesis_fixture(mimesis):
     age = 18
+
     assert mimesis('age', minimum=age, maximum=age) == age
     assert len(mimesis('full_name').split(' ')) > 1
 

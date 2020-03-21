@@ -1,7 +1,7 @@
 ## pytest-mimesis
 
 
-[![Build Status](https://travis-ci.org/pytest-dev/pytest-mimesis.svg?branch=master)](https://travis-ci.org/pytest-dev/pytest-mimesis)
+[![Build Status](https://travis-ci.com/pytest-dev/pytest-mimesis.svg?branch=master)](https://travis-ci.com/pytest-dev/pytest-mimesis)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 [![Python Version](https://img.shields.io/pypi/pyversions/pytest-mimesis.svg)](https://pypi.org/project/pytest-mimesis/)
 
@@ -13,6 +13,7 @@
 ```bash
 pip install pytest-mimesis
 ```
+
 
 ## Examples
 
@@ -26,19 +27,21 @@ def validate_email(email):
     return True
 ```
 
-`tests/test_email.py`:
+And your test file:
 
 ```python
+# tests/test_email.py
+
 from your_module import validate_email
 
 def test_validate_email(mimesis):
     assert validate_email(mimesis('email'))
 ```
 
-Specifying locales:
+You can also specify locales:
 
 ```python
-@pytest.mark.parameterize('mimesis_locale', 'de')  # use German locale
+@pytest.mark.parameterize('mimesis_locale', ['de'])  # use German locale
 def test_create_user(mimesis):
     assert create_user(name=mimesis('full_name'))
 
@@ -48,6 +51,7 @@ def test_add_phone(user, mimesis):
     assert user.add_phone_number(name=mimesis('full_name'))
 ```
 
+
 ## Fixtures
 
 We provide two public fixtures: `mimesis_locale` and `mimesis`.
@@ -56,6 +60,14 @@ While `mimesis_locale` is just a string (like: `en`, `ru`),
 
 We use caching of `mimesis` instances for different locales for the whole
 test session, so creating new instances is cheap.
+
+
+## Related projects
+
+You might also be interested in:
+
+- [mimesis](https://github.com/lk-geimfari/mimesis) itself, it is awesome!
+- [mimesis-factory](https://github.com/mimesis-lab/mimesis-factory) which brings `factory_boy` integration to `mimesis`
 
 
 ## License
