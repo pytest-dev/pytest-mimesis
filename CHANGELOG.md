@@ -1,5 +1,11 @@
 # Version history
 
+## Version (unreleased)
+
+### Features
+
+- Adds `python3.9` support
+
 ## Version 1.1.0
 
 ### Features
