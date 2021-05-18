@@ -45,7 +45,7 @@ classifiers = [
 ]
 
 [tool.poetry.plugins.pytest11]
-mimesis = "pytest_mimesis.plugin"
+mimesis = "pytest_mimesis"
 
 
 [tool.poetry.dependencies]
