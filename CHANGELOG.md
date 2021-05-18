@@ -1,5 +1,18 @@
 # Version history
 
+
+## Version 1.2.0
+
+### Features
+
+- Adds `python3.9` support
+- Adds `py.typed` and type hints
+
+### Misc
+
+- Moves to GitHub Actions
+
+
 ## Version 1.1.0
 
 ### Features
