@@ -1,7 +1,6 @@
 ## pytest-mimesis
 
-
-[![Build Status](https://travis-ci.com/pytest-dev/pytest-mimesis.svg?branch=master)](https://travis-ci.com/pytest-dev/pytest-mimesis)
+[![test](https://github.com/pytest-dev/pytest-mimesis/actions/workflows/test.yml/badge.svg)](https://github.com/pytest-dev/pytest-mimesis/actions/workflows/test.yml)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 [![Python Version](https://img.shields.io/pypi/pyversions/pytest-mimesis.svg)](https://pypi.org/project/pytest-mimesis/)
 
