@@ -1,3 +1,8 @@
+# ⛔️ DEPRECATED
+
+This repository is now deprecated. We have integrated `pytest-mimesis` into mimesis itself, and there is no longer a need to use a separate package. Refer to the [Integration with Pytest](https://mimesis.name/en/v14.0.0/pytest_plugin.html) section for more details.
+
+
 ## pytest-mimesis
 
 [![test](https://github.com/pytest-dev/pytest-mimesis/actions/workflows/test.yml/badge.svg)](https://github.com/pytest-dev/pytest-mimesis/actions/workflows/test.yml)
